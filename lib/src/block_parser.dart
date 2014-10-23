@@ -21,7 +21,7 @@ final _RE_HEADER = new RegExp(r'^(#{1,6})(.*?)#*$');
 final _RE_BLOCKQUOTE = new RegExp(r'^[ ]{0,3}>[ ]?(.*)$');
 
 /// A line indented four spaces. Used for code blocks and lists.
-final _RE_INDENT = new RegExp(r'^(?:    |\t)(.*)$');
+final _RE_INDENT = new RegExp(r'^(?:    |\t)([^<]*)$');
 
 /// Fenced code block.
 final _RE_CODE = new RegExp(r'^(`{3,}|~{3,})(.*)$');
