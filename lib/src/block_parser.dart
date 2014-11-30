@@ -10,6 +10,7 @@ import 'util.dart';
 
 /// The line contains only whitespace or is empty.
 final _RE_EMPTY = new RegExp(r'^([ \t]*)$');
+final _RE_EMPTY2 = new RegExp(r'^([ \t]*)$\n^([ \t]*)$');
 
 /// A series of `=` or `-` (on the next line) define setext-style headers.
 final _RE_SETEXT = new RegExp(r'^((=+)|(-+))$');
